@@ -33,7 +33,7 @@ async def get_pre(bot, message):
 
 
 bot = commands.Bot(command_prefix=get_pre, owner_id=392151500929105920, description="A simple discord bot")
-token = "NDI3Mjg5ODkxMzc4ODIzMTY4.DiMsgw.W4z6-BdmJRKdWYCGPf9FeJ21UTQ"
+token = "my-token"
 
 bot._last_result = None
 bot.load_extension('cogs.util')
@@ -48,10 +48,6 @@ bot.load_extension('cogs.music')
 bot.load_extension('cogs.help')
 bot.load_extension('cogs.logs')
 bot.commands_run = 0
-
-
-#client = pymongo.MongoClient("mongodb+srv://avik:$olanki14@cluster0._mongodb._tcp.cluster0.mongodb.net.")
-#db = client.test
 
 bot.start_time = datetime.datetime.now()
 
